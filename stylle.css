@@ -1,0 +1,55 @@
+body{
+    background-color: #06b861;
+}
+
+.home{
+    position: relative;
+}
+.topo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icons{
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+}
+.icons a:hover{
+    i{
+      animation: translateY 0.8s infinite alternate;
+      color: #d8d8d8;
+    }
+  }
+  @keyframes translateY {
+    from{
+      transform: translateY(0) scale(1);
+    } 
+    to {
+      transform: translateY(-8px) scale(1.1);
+    }
+}
+.topo{
+    margin-top: 30px;
+}
+.logo img{
+    display: flex;
+    width: 160px;
+    margin-top: 40px;
+}
+.logo{
+    display: flex;
+    margin-top: -40px;
+}
+
+.menu a{
+    text-decoration: none;
+    background-color: #d8d8d8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.menu{
+    justify-self: center;
+    margin-top: 30px;
+}
