@@ -148,3 +148,123 @@ body{
         border-right-color: transparent;
     }
 }
+
+/* Estilo do container do slideshow */
+.container {
+    display: flex;
+    background-color: #f2f2f2; /* Cor cinza de fundo */
+    width: 100%;
+    height: 120hv;
+    margin-top: 15px;
+}
+
+.container:last-child {
+    width: 100%;
+}
+
+.slideshow {
+    width: 70%; /* Largura do slideshow */
+    height: 100%; /* Altura do slideshow */
+    overflow: hidden; /* Para esconder partes da imagem que não cabem */
+}
+
+.slides {
+    width: 100%; /* Largura da imagem */
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-nos {
+    width: 30%; /* Largura da seção "Sobre Nós" */
+    padding: 20px;
+    text-align: right;
+}
+
+.sobre-nos h2 {
+    color: #333; /* Cor do título */
+}
+.slides {
+    display: none;
+}
+
+/* Classe para a animação de fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Estilos para a seção que contém os blocos de cursos */
+.cursos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  /* Estilos para cada bloco de curso */
+  .curso {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Ajustar largura conforme necessário */
+    transition: 0.3s ease-in-out; /* Animação de transição suave */
+  }
+  
+  /* Estilos para o cabeçalho do curso (com título) */
+  .curso-header {
+    background-color: #dfe1e5; /* Cor de fundo mais escura */
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0; /* Arredonda apenas os cantos superiores */
+  }
+  
+  .curso-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Cor de texto mais escura */
+  }
+  
+  /* Estilos para a imagem do curso */
+  .curso img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para a descrição do curso */
+  .curso p {
+    line-height: 1.6;
+    color: #666; /* Cor de texto mais clara */
+    text-align: center;
+  }
+  
+  /* Estilos para o botão de inscrição */
+  .curso .botao {
+    display: block;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação de transição suave */
+    text-align: center;
+  }
+  
+  .curso .botao:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+  }
+  
+  /* Animação de "pulsante" no botão de inscrição */
+  .curso .botao:hover::before {
+    content:
+  

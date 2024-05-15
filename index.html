@@ -48,6 +48,72 @@
             <h2 class="typing-animation">Onde a Tecologia trasnforma vidas</h2>
         </div>
     </div>
+  
+    <div class="container" id="slideshow-container">
+        <div class="slideshow">
+            <div class="slides fade">
+                <img src="assets/img1.webp" alt="Imagem 1">
+            </div>
+            <div class="slides fade">
+                <img src="assets/img2.webp" alt="Imagem 2">
+            </div>
+            <div class="slides fade">
+                <img src="assets/img3.webp" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe apaixonada por criar soluções inovadoras para nossos clientes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ante vel est convallis dignissim. Fusce suscipit.</p>
+        </div>
+    </div>
+
+    <div class="nossos-cursos">
+        <h1 class="titulo-cursos">O que oferecemos: </h1>
+    </div>
+
+    <script>
+        // Definindo a altura do slideshow container com base no texto "Sobre Nós"
+        document.getElementById("slideshow-container").style.height = document.querySelector('.sobre-nos').offsetHeight + 'px';
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos
+        }
+    </script>
+
+<section class="cursos">
+    <div class="curso">
+        <div class="curso-header">
+            <h2>Título do Curso 1</h2>
+        </div>
+        <img src="assets/ib.webp" alt="Curso 1">
+        <p>Descrição do curso 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus non enim iaculis laoreet. Sed euismod risus quis quam porttitor tincidunt.</p>
+        <a href="#" class="botao">Inscreva-se</a>
+    </div>
+
+    <div class="curso">
+        <div class="curso-header">
+            <h2>Título do Curso 2</h2>
+        </div>
+        <img src="curso2.jpg" alt="Curso 2">
+        <p>Descrição do curso 2. Lorem ipsum dolor sit amet, conm tincidunt mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <a href="#" class="botao">Inscreva-se</a>
+    </div>
+</section>
+</body>
+
+</html>
+ 
 </div>
 </body>
 </html>
